@@ -4,20 +4,20 @@
 
 // My first choice but doesn't work for some reason. Will update later, why not?
 
-// function removeDuplicates(nums) {
-//     const uniqueValues = {}
-//     let result = []
-//     nums.forEach(num => {
-//         if(uniqueValues[num]) {
-//             result.push('_')
-//         } else {
-//         uniqueValues[num] = num
-//         }
-//     })
+function removeDuplicates(nums) {
+    const uniqueValues = {}
+    let result = []
+    nums.forEach(num => {
+        if(uniqueValues[num]) {
+            result.push('_')
+        } else {
+        uniqueValues[num] = num
+        }
+    })
 
-//     nums = [...Object.values(uniqueValues), ...result]
-//     return Object.values(uniqueValues).length
-// };
+    nums = [...Object.values(uniqueValues), ...result]
+    return Object.values(uniqueValues).length
+};
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
